@@ -7,14 +7,6 @@ on:
         required: true
         type: string
 
-    outputs:
-      resource_group_name:
-        description: "The name of the resource group"
-        value: ${{ jobs.main-infrastructure.outputs.resource_group_name }}
-      functionapp_name:
-        description: "The name of the function app"
-        value: ${{ jobs.main-infrastructure.outputs.functionapp_name }}
-
 env:
   # service principal credentials
   ARM_TENANT_ID: ${{ secrets.ARM_TENANT_ID }}
