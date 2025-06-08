@@ -7,7 +7,7 @@ resource "azurerm_storage_account" "storage_account" {
 }
 
 resource "azurerm_storage_container" "function_container" {
-  name                  = "toxic-bot-function-${var.environment}"
+  name                  = "fn-toxic-bot-${var.environment}"
   storage_account_id    = azurerm_storage_account.storage_account.id
   container_access_type = "private"
 }
