@@ -59,12 +59,6 @@ jobs:
             -backend-config="resource_group_name=${AZ_TERRAFORM_BACKEND_RESOURCEGROUP}" \
 
       - name: Terraform Plan
-        env:
-          AZ_OWNER_OBJECT_ID: ${{ secrets.AZ_OWNER_OBJECT_ID }}
-          AZ_OPENAI_STATE_FILE_KEY: "openai.terraform.tfstate"
-          AZ_BACKEND_CONTAINER_NAME: ${{ inputs.environment }}
-          AZ_TERRAFORM_BACKEND_STORAGEACCOUNT: ${{ vars.AZ_TERRAFORM_BACKEND_STORAGEACCOUNT }}
-          AZ_TERRAFORM_BACKEND_RESOURCEGROUP: ${{ vars.AZ_TERRAFORM_BACKEND_RESOURCEGROUP }}
         run: |
           terraform plan -out=tfplan -var-file=environments/${{ inputs.environment }}.tfvars
 

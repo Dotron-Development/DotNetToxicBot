@@ -35,4 +35,6 @@ resource "azurerm_function_app_flex_consumption" "function_app" {
   instance_memory_in_mb       = 2048
 
   site_config {}
+
+  depends_on = [azurerm_storage_account.storage_account]
 }
