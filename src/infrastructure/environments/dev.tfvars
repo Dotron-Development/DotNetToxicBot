@@ -1,2 +1,2 @@
-location    = "Poland Central"
+location    = "North Europe"
 environment = "dev"
