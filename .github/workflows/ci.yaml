@@ -17,8 +17,8 @@ jobs:
       environment: dev
     secrets: inherit
 
-  deploy-main-infrastructure-to-prod:
-    uses: ./.github/workflows/main-infrastructure.yaml
-    with:
-      environment: prod
-    secrets: inherit
+  # deploy-main-infrastructure-to-prod:
+  #   uses: ./.github/workflows/main-infrastructure.yaml
+  #   with:
+  #     environment: prod
+  #   secrets: inherit

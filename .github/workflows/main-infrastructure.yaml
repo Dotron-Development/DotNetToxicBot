@@ -19,10 +19,6 @@ jobs:
     runs-on: self-hosted
     environment: ${{ inputs.environment }}
 
-    outputs:
-      resource_group_name: ${{ steps.generate-outputs.outputs.resource_group_name }}
-      functionapp_name: ${{ steps.generate-outputs.outputs.functionapp_name }}
-
     defaults:
       run:
         working-directory: src/infrastructure
