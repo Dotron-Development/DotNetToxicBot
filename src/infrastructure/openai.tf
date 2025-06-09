@@ -16,7 +16,7 @@ module "avm-res-cognitiveservices-account" {
         version = var.ai_model_version
       }
       scale = {
-        type     = "Global Standard"
+        type     = "GlobalStandard"
         capacity = var.ai_capacity
       }
     },
