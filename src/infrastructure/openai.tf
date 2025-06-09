@@ -1,7 +1,7 @@
 module "avm-res-cognitiveservices-account" {
   source              = "Azure/avm-res-cognitiveservices-account/azurerm"
   kind                = "OpenAI"
-  location            = var.location
+  location            = var.ai_location
   name                = "${local.appName}-ai-services-account-${var.environment}"
   resource_group_name = azurerm_resource_group.rg.name
   sku_name            = "S0"

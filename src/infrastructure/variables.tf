@@ -22,3 +22,8 @@ variable "ai_capacity" {
   description = "The capacity for the OpenAI service."
   type        = number
 }
+
+variable "ai_location" {
+  description = "The Azure region for the OpenAI service"
+  type        = string
+}
