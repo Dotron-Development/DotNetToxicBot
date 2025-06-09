@@ -1,1 +1,4 @@
 
+locals {
+  appName = "toxic-bot"
+}
